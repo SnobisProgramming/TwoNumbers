@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <p>Two Numbers</p>
+    <h3 class="center">Two Numbers</h3>
     <form action="/solution" method="get">
-        <p>Enter your operation.</p>
+        <p class="center">Enter your operation.</p>
         <input autocomplete="off" autofocus name="num1" placeholder="Your first number" type="text">
         <input autocomplete="off" autofocus name="num2" placeholder="Your second number" type="text">
         <input autocomplete="off" autofocus name="operation" placeholder="Your operation" type="text">
-        <button type="submit">Get Calculation</button>
+        <button class="fancy_button" type="submit">Get Calculation</button>
     </form>
 
 {% endblock %}
