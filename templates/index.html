@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <p>Two Numbers</p>
+    <form action="/solution" method="post">
+        <p>Enter your operation below:</p>
+        <input autocomplete="off" autofocus name="num1" placeholder="Your first number" type="number">
+        <input autocomplete="off" autofocus name="num2" placeholder="Your second number" type="number">
+        <select name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button type="submit">Calculate!</button>
+    </form>
+
+{% endblock %}
