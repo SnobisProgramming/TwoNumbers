@@ -2,12 +2,17 @@
 
 {% block body %}
     <h3 class="center">Two Numbers</h3>
-    <form action="/solution" method="get">
-        <p class="center">Enter your operation.</p>
-        <input autocomplete="off" autofocus name="num1" placeholder="Your first number" type="text">
-        <input autocomplete="off" autofocus name="num2" placeholder="Your second number" type="text">
-        <input autocomplete="off" autofocus name="operation" placeholder="Your operation" type="text">
-        <button class="fancy_button" type="submit">Get Calculation</button>
+    <form action="/solution" method="post">
+        <p class="center">Enter your operation below:</p>
+        <input autocomplete="off" autofocus name="num1" placeholder="Your first number" type="number">
+        <input autocomplete="off" autofocus name="num2" placeholder="Your second number" type="number">
+        <select name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button class="fancy_button" type="submit">Calculate!</button>
     </form>
 
 {% endblock %}
