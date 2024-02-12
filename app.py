@@ -23,7 +23,7 @@ def wordCount():
         try:
             result = num1 / num2
         except ZeroDivisionError:
-            return render_template("fail.html")
+            return render_template("failure.html")
     return render_template("solution.html", result=result, num1=num1, operation=operation, num2=num2)
 
 
