@@ -10,9 +10,10 @@ def index():  # put application's code here
 
 @app.route("/solution", methods=["POST", "GET"])
 def wordCount():
-    num1 = request.form.get("num1")
-    operation = request.form.get("operation")
-    num2 = request.form.get("num2")
+    num1 = int(request.args.get("num1"))
+    operation = request.args.get("operation")
+    num2 = int(request.args.get("num2"))
+
     if operation == "+":
         result = num1 + num2
     elif operation == "-":
